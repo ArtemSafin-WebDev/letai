@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>
+            Главная страница
+        </title>
+    </head>
+
+    <body class="no-touch" ontouchstart="">
+        <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+            <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="checkmark" viewBox="0 0 11.64 11.64" xmlns="http://www.w3.org/2000/svg"><defs><style>.acls-1{fill-rule:evenodd}</style></defs><path class="acls-1" d="M11 .24c.67.45.85 1.35.4 2.02L5.58 11c-.24.36-.63.6-1.07.64s-.86-.11-1.17-.42L.43 8.31c-.57-.57-.57-1.49 0-2.06.57-.57 1.49-.57 2.06 0l1.66 1.66L8.98.65c.45-.67 1.35-.85 2.02-.4z"/></symbol><symbol viewBox="0 0 25 25" id="cross" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 12.41l5.04-5.04c.25-.25.25-.66 0-.92a.658.658 0 00-.92 0l-5.04 5.04-5.03-5.03c-.25-.25-.66-.25-.92 0s-.25.66 0 .92l5.04 5.04-5.04 5.04c-.25.25-.25.66 0 .92s.66.25.92 0l5.04-5.04 5.04 5.04c.25.25.66.25.92 0 .25-.25.25-.66 0-.92l-5.04-5.04z"/></symbol><symbol id="hz" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="cclippath"><path class="ccls-1" d="M4.8 4.38h22v22h-22z"/></clipPath><style>.ccls-1{fill:none}.cls-2{clip-path:url(#cclippath)}</style></defs><path d="M17.92 17.5c-1.73 1.78-1.85 4.01-2 8.88 4.54 0 7.68-.02 9.29-1.59 1.57-1.62 1.59-4.9 1.59-9.3-4.87.16-7.09.27-8.88 2zm-13.12-2c0 4.39.02 7.68 1.59 9.3 1.62 1.57 4.75 1.59 9.3 1.59-.16-4.87-.28-7.09-2-8.88-1.78-1.73-4.01-1.85-8.88-2zM15.68 4.38c-4.53 0-7.68.02-9.3 1.59-1.57 1.62-1.59 4.9-1.59 9.3 4.87-.16 7.1-.28 8.88-2 1.73-1.78 1.85-4.01 2-8.88zm2.24 8.88c-1.73-1.78-1.85-4.01-2-8.88 4.54 0 7.68.02 9.29 1.59 1.57 1.62 1.59 4.9 1.59 9.3-4.87-.16-7.09-.28-8.88-2z"/></symbol><symbol viewBox="0 0 24 24" id="ok" xmlns="http://www.w3.org/2000/svg"><path d="M12.4.88c-2.79 0-5.09 2.3-5.09 5.17s2.26 5.17 5.09 5.17 5.09-2.3 5.09-5.17S15.19.88 12.4.88zm0 6.9c-.94 0-1.7-.77-1.7-1.72s.75-1.72 1.7-1.72 1.7.77 1.7 1.72-.75 1.72-1.7 1.72zM18.66 14.71c-1.28.73-2.68 1.23-4.07 1.46l3.96 4.94c.45.57.57 1.38.15 1.99-.64 1-2 1.03-2.68.15l-3.66-4.56-3.62 4.56c-.34.42-.79.61-1.28.61s-.98-.23-1.32-.69c-.41-.57-.38-1.53.08-2.11l3.92-4.98c-1.39-.27-2.79-.73-4.03-1.46-.79-.46-1.06-1.46-.6-2.3.45-.8 1.47-1.07 2.26-.61 2.86 1.65 6.44 1.65 9.35.04.79-.46 1.81-.15 2.22.65.41.84.11 1.84-.68 2.3z"/></symbol><symbol viewBox="0 0 53 53" id="plus" xmlns="http://www.w3.org/2000/svg"><path d="M52.9 24.39H28.6V.09h-4.05v24.3H.25v4.05h24.3v24.3h4.05v-24.3h24.3v-4.05z"/></symbol><symbol viewBox="0 0 31 31" id="telegram" xmlns="http://www.w3.org/2000/svg"><path d="M5.78 13.59c6.52-2.92 10.87-4.85 13.04-5.78 6.21-2.66 7.5-3.12 8.34-3.14.18 0 .6.04.87.27.23.19.29.44.32.62.03.18.07.59.04.91-.34 3.64-1.79 12.47-2.53 16.55-.31 1.72-.93 2.3-1.53 2.36-1.3.12-2.28-.88-3.54-1.73-1.97-1.33-3.08-2.15-4.99-3.45-2.21-1.5-.78-2.32.48-3.67.33-.35 6.05-5.71 6.16-6.19.01-.06.03-.29-.1-.41s-.32-.08-.46-.05c-.2.05-3.34 2.19-9.43 6.42-.89.63-1.7.94-2.43.92-.8-.02-2.33-.46-3.48-.85-1.4-.47-2.51-.72-2.42-1.51.05-.41.61-.84 1.66-1.27z"/></symbol><symbol viewBox="0 0 31 31" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M16.93 23.95c-9.27 0-14.56-6.43-14.78-17.14h4.64c.15 7.86 3.58 11.19 6.29 11.87V6.81h4.37v6.78c2.68-.29 5.49-3.38 6.44-6.78h4.37c-.73 4.19-3.78 7.28-5.95 8.55 2.17 1.03 5.65 3.72 6.97 8.6h-4.81c-1.03-3.26-3.61-5.78-7.02-6.13v6.13h-.53z"/></symbol><symbol viewBox="0 0 31 31" id="youtube" xmlns="http://www.w3.org/2000/svg"><path d="M30.27 8.51c-.17-.6-.51-1.15-.97-1.6-.46-.44-1.04-.76-1.68-.92-2.34-.6-11.72-.6-11.72-.6s-9.39 0-11.72.6c-.63.16-1.21.48-1.68.92-.46.44-.8.99-.97 1.6-.44 2.27-.65 4.57-.63 6.88-.02 2.31.2 4.61.63 6.88.17.6.5 1.15.97 1.6.46.44 1.04.76 1.68.92 2.34.6 11.72.6 11.72.6s9.39 0 11.72-.6c.63-.16 1.21-.48 1.68-.92.46-.44.8-.99.97-1.6.44-2.27.65-4.57.63-6.88.02-2.31-.2-4.61-.63-6.88zM12.9 19.67V11.1l7.79 4.29-7.79 4.29z"/></symbol></svg>        </div>
+
+        <div class="page-content">
+            <header class="page-header">
+                <div class="container">
+                    <div class="page-header__row">
+                        <a href="/" class="page-header__logo">
+                            <img src="img/logo.svg" alt="" class="page-header__logo-image">
+                        </a>
+                        <div class="page-header__menu">
+                            <nav class="page-header__nav">
+                                <ul class="page-header__nav-list">
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#advantages" class="page-header__nav-link">
+                                            Преимущества
+                                        </a>
+                                    </li>
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#about" class="page-header__nav-link">
+                                            О стажировке
+                                        </a>
+                                    </li>
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#contact" class="page-header__nav-link">
+                                            Отправить заявку
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <button class="page-header__burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </header>            <main class="page-main">
+
+        <section class="intro">
+            <div class="container">
+                <div class="intro__row">
+                    <div class="intro__text-content">
+                        <h1 class="intro__heading">
+                            Стажировка<br>
+                            в летай
+                        </h1>
+                        <div class="intro__text">
+                            Первый шаг в большую карьеру. Получи реальный опыт на оплачиваемой стажировке в сфере
+                            телекоммуникаций.
+                        </div>
+                        <a href="#" class="intro__link">
+                            <img src="img/toggle.svg" alt="" class="intro__link-image">
+                            ВКЛЮЧИть<br> СВОЮ КАРЬЕРУ
+                        </a>
+                    </div>
+                    <div class="intro__image-wrapper">
+                        <img src="img/intro.jpg" alt="" class="intro__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="we-offer" id="advantages">
+            <div class="container">
+                <h2 class="we-offer__heading">
+                    Что мы предлагаем
+                </h2>
+                <ul class="we-offer__list">
+                    <li class="we-offer__list-item">
+                        <div class="we-offer__card">
+                            <h3 class="we-offer__card-title">
+                                Старт карьеры
+                            </h3>
+                            <div class="we-offer__card-text">
+                                Для студентов, выпускников и начинающих специалистов старше 18 лет.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="we-offer__list-item">
+                        <div class="we-offer__card">
+                            <h3 class="we-offer__card-title">
+                                Опыт
+                            </h3>
+                            <div class="we-offer__card-text">
+                                Только актуальные кейсы и много практики.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="we-offer__list-item">
+                        <div class="we-offer__card">
+                            <h3 class="we-offer__card-title">
+                                Атмосфера
+                            </h3>
+                            <div class="we-offer__card-text">
+                                Неформальное общение, командные игры и квизы.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="we-offer__list-item">
+                        <div class="we-offer__card">
+                            <h3 class="we-offer__card-title">
+                                Условия
+                            </h3>
+                            <div class="we-offer__card-text">
+                                Официальное оформление, белая<br> заработная плата.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="subjects" id="about">
+            <div class="container">
+                <h2 class="subjects__heading">
+                    Направления стажировки
+                </h2>
+                <ul class="subjects__list">
+                    <li class="subjects__list-item">
+                        <div class="subjects__accordion js-accordion">
+                            <button class="subjects__accordion-btn js-accordion-btn">
+                                <span class="subjects__accordion-btn-content">
+                                    <span class="subjects__accordion-btn-title">
+                                        маркетинг
+                                    </span>
+                                    <span class="subjects__accordion-btn-text">
+                                        Ответственный за стратегию продвижения продуктов и услуг.
+                                    </span>
+                                </span>
+                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                    <use xlink:href="#plus"></use>
+                                </svg>
+                            </button>
+                            <div class="subjects__accordion-content js-accordion-content">
+                                <div class="subjects__accordion-content-inner">
+                                    <div class="subjects__accordion-conditions">
+                                        <h3 class="subjects__accordion-conditions-title">
+                                            Условия
+                                        </h3>
+                                        <div class="subjects__accordion-conditions-text">
+                                            4 часа в день. 4 дня в неделю hard skills,<br>1 день в неделю - soft<br>
+                                            Количество часов - 88 час./мес.<br>
+                                            Заработная плата - 7 000 руб.
+                                        </div>
+                                    </div>
+                                    <div class="subjects__accordion-text-content">
+                                        <h4>
+                                            Март
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                Маркетинг в сфере телекоммуникаций.
+                                            </li>
+                                            <li>
+                                                Изучение брендбука компании.
+                                            </li>
+                                            <li>
+                                                Анализ рынка и конкурентов.
+                                            </li>
+                                            <li>
+                                                Медиапланирование.
+                                            </li>
+                                        </ul>
+                                        <h4>
+                                            Апрель
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                Создание креативных концепций.
+                                            </li>
+                                            <li>
+                                                Разработка рекламных кампаний.
+                                            </li>
+                                            <li>
+                                                Разработка концепций промо-мероприятий.
+                                            </li>
+                                            <li>
+                                                Разработка дизайн-макетов.
+                                            </li>
+                                        </ul>
+                                        <h4>
+                                            Май
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                Разработка аудиороликов.
+                                            </li>
+                                            <li>
+                                                Разработка видеороликов.
+                                            </li>
+                                            <li>
+                                                Анализ эффективности маркетинговых мероприятий.
+                                            </li>
+                                            <li>
+                                                Работа с полиграфической продукцией.
+                                            </li>
+                                            <li>
+                                                Работа с сувенирной продукцией.
+                                            </li>
+                                            <li>
+                                                Маркетинговые исследования.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="subjects__list-item">
+                        <div class="subjects__accordion js-accordion">
+                            <button class="subjects__accordion-btn js-accordion-btn">
+                                <span class="subjects__accordion-btn-content">
+                                    <span class="subjects__accordion-btn-title">
+                                        дизайн
+                                    </span>
+                                    <span class="subjects__accordion-btn-text">
+                                        Ответственный за стратегию продвижения продуктов и услуг.
+                                    </span>
+                                </span>
+                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                    <use xlink:href="#plus"></use>
+                                </svg>
+                            </button>
+                            <div class="subjects__accordion-content js-accordion-content">
+                                <div class="subjects__accordion-content-inner">
+                                    <div class="subjects__accordion-conditions">
+                                        <h3 class="subjects__accordion-conditions-title">
+                                            Условия
+                                        </h3>
+                                        <div class="subjects__accordion-conditions-text">
+                                            4 часа в день. 4 дня в неделю hard skills,<br>1 день в неделю - soft<br>
+                                            Количество часов - 88 час./мес.<br>
+                                            Заработная плата - 7 000 руб.
+                                        </div>
+                                    </div>
+                                    <div class="subjects__accordion-text-content">
+                                        <h4>
+                                            Март
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                Дизайн в сфере телекоммуникаций.
+                                            </li>
+                                            <li>
+                                                Изучение брендбука компании.
+                                            </li>
+                                            <li>
+                                                Конкурентное окружение.
+                                            </li>
+                                            <li>
+                                                Основы дизайна в компании.
+                                            </li>
+                                            <li>
+                                                Презентация текущих и архивных макетов, история визуалов.
+                                            </li>
+                                        </ul>
+                                        <h4>
+                                            Апрель
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                Построение концепций макетов к рекламным кампаниям: ТЗ, идеи, ресурсы,
+                                                тексты.
+                                            </li>
+                                            <li>
+                                                Разработка рекламной продукции к акциям.
+                                            </li>
+                                            <li>
+                                                Изучение основ работы с видео: монтаж, анимация, программы,
+                                                инструментарии, правила.
+                                            </li>
+                                        </ul>
+                                        <h4>
+                                            Май
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                Работа с макетами структурных подразделений: виды макетов, сложность,
+                                                коммуникация со службами.
+                                            </li>
+                                            <li>
+                                                Дизайн в B2B и B2C сегментах.
+                                            </li>
+                                            <li>
+                                                Принципы работы по техническому заданию.
+                                            </li>
+                                            <li>
+                                                Самостоятельная работа стажера под руководством наставника, решение
+                                                текущих задач отдела.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="how-to-get">
+            <div class="container">
+                <h2 class="how-to-get__heading">
+                    Как попасть на стажировку?
+                </h2>
+                <ol class="how-to-get__list">
+                    <li class="how-to-get__list-item">
+                        <div class="how-to-get__card">
+                            <div class="how-to-get__card-content">
+                                <h3 class="how-to-get__card-title">
+                                    подать заявку
+                                </h3>
+                                <div class="how-to-get__card-text">
+                                    Выберите направление и подайте заявку по форме ниже.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="how-to-get__list-item">
+                        <div class="how-to-get__card">
+                            <div class="how-to-get__card-content">
+                                <h3 class="how-to-get__card-title">
+                                    тестовое задание
+                                </h3>
+                                <div class="how-to-get__card-text">
+                                    Выполните тестовое задание по выбранному направлению.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="how-to-get__list-item">
+                        <div class="how-to-get__card">
+                            <div class="how-to-get__card-content">
+                                <h3 class="how-to-get__card-title">
+                                    пройдите интервью
+                                </h3>
+                                <div class="how-to-get__card-text">
+                                    Координатор пригласит всех, кто успешно справился с отборочными испытаниями. После
+                                    интервью — свяжется с вами и сообщит результаты.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="contacts-us" id="contact">
+            <div class="container">
+                <div class="contacts-us__content">
+                    <h2 class="contact-us__heading">
+                        Подать заявку
+                    </h2>
+                    <form action="/" method="POST" class="contact-us__form" data-need-validation="">
+                        <div class="contact-us__form-fields">
+                            <div class="contact-us__form-field">
+                                <input type="text" name="name" class="contact-us__form-input"
+                                    placeholder="Фамилия имя Отчество" required="">
+                            </div>
+                            <div class="contact-us__form-field" id="city-container">
+                                <select name="city" class="js-custom-select" required=""
+                                    data-parsley-errors-container="#city-container">
+                                    <option value="" placeholder="">
+                                        Ваш город
+                                    </option>
+                                    <option value="Казань">Казань</option>
+                                </select>
+                            </div>
+                            <div class="contact-us__form-field" id="subject-container">
+                                <select name="subject" class="js-custom-select" required=""
+                                    data-parsley-errors-container="#subject-container">
+                                    <option value="" placeholder="">
+                                        Направление
+                                    </option>
+                                    <option value="Казань">Направление 1</option>
+                                </select>
+                            </div>
+                            <div class="contact-us__form-field">
+                                <input type="email" name="email" class="contact-us__form-input"
+                                    placeholder="Элетронная почта" required="">
+                            </div>
+                        </div>
+                        <div class="contact-us__form-bottom-row">
+                            <div class="contact-us__form-checkbox-wrapper" id="policy-container">
+                                <label class="contact-us__form-checkbox">
+                                    <input type="checkbox" name="policy" class="contact-us__form-checkbox-input"
+                                        value="1" required="" checked=""
+                                        data-parsley-errors-container="#policy-container">
+                                    <span class="contact-us__form-checkbox-mark">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                            <use xlink:href="#checkmark"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="contact-us__form-checkbox-text">
+                                        Согласие на обработку персональных данных
+                                    </span>
+                                </label>
+                            </div>
+                            <button class="contact-us__form-submit" type="submit">
+                                отправить заявку
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+            </main>
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="page-footer__top-row">
+                        <a href="/" class="page-footer__logo">
+                            <img src="img/logo-white.svg" alt="" class="page-footer__logo-image">
+                        </a>
+                        <ul class="page-footer__social-list">
+                            <li class="page-footer__social-list-item">
+                                <a href="#" class="page-footer__social-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-vk">
+                                        <use xlink:href="#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="page-footer__social-list-item">
+                                <a href="#" class="page-footer__social-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-telegram">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="page-footer__social-list-item">
+                                <a href="#" class="page-footer__social-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-hz">
+                                        <use xlink:href="#hz"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="page-footer__social-list-item">
+                                <a href="#" class="page-footer__social-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-youtube">
+                                        <use xlink:href="#youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="page-footer__social-list-item">
+                                <a href="#" class="page-footer__social-link">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-ok">
+                                        <use xlink:href="#ok"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-footer__bottom-row">
+                        <nav class="page-footer__nav">
+                            <ul class="page-footer__nav-list">
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        Стажировка в Летай
+                                    </a>
+                                </li>
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        Преимущества
+                                    </a>
+                                </li>
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        О стажировке
+                                    </a>
+                                </li>
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        Отправить заявку
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+            
+                        <div class="page-footer__info">
+                            <h3 class="page-footer__info-title">
+                                Остались вопросы о программе?
+                            </h3>
+                            <ul class="page-footer__info-list">
+                                <li class="page-footer__info-list-item">
+                                    <div class="page-footer__info-card">
+                                        <h4 class="page-footer__info-card-title">
+                                            Напиши нам на почту
+                                        </h4>
+                                        <a href="mailto:letai_hr@letai.ru" class="page-footer__info-card-link">
+                                            letai_hr@letai.ru
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="page-footer__info-list-item">
+                                    <div class="page-footer__info-card">
+                                        <h4 class="page-footer__info-card-title">
+                                            Задай вопрос в телеграм
+                                        </h4>
+                                        <a href="t.me/letai_stajorivka" class="page-footer__info-card-link">
+                                            t.me/letai_stajorivka
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page-footer__copyright">
+                        <p>
+                            Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских
+                            данных, в соответствии с Политикой конфиденциальности.
+                            © 2022 ПАО «Таттелеком» 12+. Сайт является СМИ. Эл №ФС77-66502 от 14.07.2016
+                        </p>
+                    </div>
+                </div>
+            </footer>            <div class="modal js-modal" id="callback-success">
+                <div class="modal__inner">
+                    <button class="modal__close js-close-modal">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                            <use xlink:href="#cross"></use>
+                        </svg>
+                    </button>
+                    <h3 class="modal__heading">
+                        Спасибо!
+                    </h3>
+                    <img src="img/heart.svg" alt="" class="modal__icon">
+                    <div class="modal__text">
+                        Ваша завка принята в обработку, Мы свяжемся с вами в ближайшее время
+                    </div>
+                </div>
+            </div>            <style>
+                .ie-placeholder {
+                    z-index: 4000;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #202020;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    
+                }
+                .ie-placeholder__message {
+                    font-size: 2rem;
+                    line-height: 1.2;
+                    font-weight: 500;
+                    margin: auto;
+                }
+                @supports (display: grid) {
+                    .ie-placeholder {
+                        display: none;
+                    }
+                }
+            </style>
+            <div class="ie-placeholder">
+                <div class="ie-placeholder__message">
+                    Извините, ваш браузер не поддерживается
+                </div>
+            </div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="js/app.js"></script>
+            <script src="assets/js/backend.js"></script>
+        </div>
+    </body>
+
+</html>

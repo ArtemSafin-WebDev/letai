@@ -1,0 +1,221 @@
+.page-footer {
+    background: #ff5000;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+        padding-top: 3.7rem;
+        padding-bottom: 5.2rem;
+    }
+}
+
+.page-footer__top-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin-bottom: 2.2rem;
+    }
+}
+
+.page-footer__logo {
+    flex-shrink: 0;
+}
+
+.page-footer__logo-image {
+    width: 18rem;
+    height: auto;
+    display: block;
+}
+
+.page-footer__social-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    row-gap: 1.5rem;
+}
+
+.page-footer__social-link {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+
+    svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+    }
+}
+
+.page-footer__bottom-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2.2rem;
+    }
+}
+
+.page-footer__nav {
+    width: 24rem;
+    flex-shrink: 0;
+    margin-top: -0.5rem;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-shrink: 1;
+        margin: 0;
+    }
+}
+
+.page-footer__nav-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 2.2rem;
+
+    @include breakpoint(mobile) {
+        grid-gap: 1.5rem;
+    }
+}
+
+.page-footer__nav-link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 128%;
+    letter-spacing: 0.015em;
+    text-decoration-line: underline;
+    transition: text-decoration-color 0.2s;
+    text-decoration-color: transparent;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 128%;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            text-decoration-color: transparent;
+        }
+    }
+}
+
+.page-footer__info {
+    width: 50%;
+    flex-grow: 1;
+    background: #ba2d00;
+    box-shadow: inset 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+    padding: 3rem;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        box-shadow: inset 0px 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
+        border-radius: 1.5rem;
+        padding: 2.2rem;
+    }
+}
+
+.page-footer__info-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 128%;
+    letter-spacing: 0.015em;
+    margin-bottom: 2rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 128%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.page-footer__info-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+    row-gap: 1.5rem;
+
+    @include breakpoint(mobile) {
+        gap: 2rem;
+        row-gap: 1rem;
+    }
+}
+
+.page-footer__info-card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 128%;
+    letter-spacing: 0.015em;
+    margin-bottom: 0.7rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 128%;
+        margin-bottom: 0.6rem;
+    }
+}
+
+.page-footer__info-card-link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 128%;
+    letter-spacing: 0.015em;
+    text-decoration-line: underline;
+    transition: text-decoration-color 0.2s;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 128%;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            text-decoration-color: transparent;
+        }
+    }
+}
+
+.page-footer__copyright {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 128%;
+    letter-spacing: 0.015em;
+    padding-top: 3rem;
+    border-top: 0.2rem solid currentColor;
+    margin-top: 5rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 128%;
+        padding-top: 1.8rem;
+        margin-top: 1.8rem;
+    }
+}
